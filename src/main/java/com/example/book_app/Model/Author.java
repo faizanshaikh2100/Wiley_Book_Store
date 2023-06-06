@@ -58,9 +58,10 @@ import java.util.Set;
 public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long authorId;
+    private int authorId;
     private String authorName;
     private String email;
+
 
     @OneToMany
     List<Book>bookList = new ArrayList<>();
